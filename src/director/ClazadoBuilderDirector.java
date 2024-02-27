@@ -1,29 +1,26 @@
 package director;
 
-import Componentes.Cordon;
-import Componentes.Tacon;
-import Componentes.Velcro;
 import builder.Builder;
 import enums.Color;
-import enums.Material;
-import enums.Tipo;
+import enums.TipoAlmohadilla;
+import enums.TipoCordon;
 
 public class ClazadoBuilderDirector {
 
     public void buildCalzadoCordonAmarillo(Builder builder) {
 
         builder.setColor(Color.Amarillo);
-        builder.setTipo(Tipo.Redondo);
+        builder.setTipoCordon(TipoCordon.Redondo);
 
     }
     public void buildCalzadoCordonNegro (Builder builder){
 
         builder.setColor(Color.Negro);
-        builder.setTipo(Tipo.Ovalado);
+        builder.setTipoCordon(TipoCordon.Ovalado);
     }
 
     public void buildCalzadoVelcro (Builder builder){
-        builder.setTipo(Tipo.Velcro);
+        builder.setTipoCordon(TipoCordon.Velcro);
         builder.setColor(Color.Azul);
     }
 
