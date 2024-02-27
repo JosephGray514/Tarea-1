@@ -6,15 +6,17 @@ import Componentes.Tacon;
 import Componentes.Velcro;
 import  Class.*;
 import enums.Color;
-import enums.Tipo;
+import enums.TipoAlmohadilla;
+import enums.TipoCordon;
 
 public interface Builder {
     void setCordon(Cordon cordon);
     void setTacon(Tacon tacon);
     void setVelcro(Velcro velcro);
     void  setAlmohadilla(Almohadilla almohadilla);
-    void  setTipo(Tipo tipo);
+    void  setTipoCordon(TipoCordon tipoCordon);
     void setColor(Color color);
+    void setTipoAlmohadilla(TipoAlmohadilla tipoAlmohadilla);
 
     Calzado getCalsado();
 }
