@@ -1,24 +1,24 @@
 package Componentes;
 
 import enums.Color;
-import enums.Tipo;
+import enums.TipoAlmohadilla;
 
 public class Velcro {
 
-    private Tipo tipo;
+    private TipoAlmohadilla tipo;
     private Color color;
 
-    public Velcro(Tipo tipo, Color color) {
+    public Velcro(TipoAlmohadilla tipo, Color color) {
         this.tipo = tipo;
         this.color = color;
     }
 
-    public Tipo getTipo() {
+    public TipoAlmohadilla getTipo() {
         return tipo;
     }
 
-    public void setTipo(Tipo tipo) {
-        this.tipo = tipo;
+    public void setTipo(TipoAlmohadilla tipoAlmohadilla) {
+        this.tipo = tipoAlmohadilla;
     }
 
     public Color getColor() {

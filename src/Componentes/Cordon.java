@@ -1,24 +1,25 @@
 package Componentes;
 
 import enums.Color;
-import enums.Tipo;
+import enums.TipoAlmohadilla;
+import enums.TipoCordon;
 
 public class Cordon {
 
-    private Tipo tipo;
+    private TipoCordon tipoCordon;
     private Color color;
 
-    public Cordon(Tipo tipo, Color color) {
-        this.tipo = tipo;
+    public Cordon(TipoCordon tipoCordon, Color color) {
+        this.tipoCordon = tipoCordon;
         this.color = color;
     }
 
-    public Tipo getTipo() {
-        return tipo;
+    public TipoCordon getTipoCordon() {
+        return tipoCordon;
     }
 
-    public void setTipo(Tipo tipo) {
-        this.tipo = tipo;
+    public void setTipoCordon(TipoCordon tipoCordon) {
+        this.tipoCordon = tipoCordon;
     }
 
     public Color getColor() {

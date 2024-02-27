@@ -1,14 +1,15 @@
 package Componentes;
 
 import enums.Material;
+import enums.MaterialTacon;
 
 public class Tacon {
     private int Altura;
-    private Material material;
+    private MaterialTacon materialTacon;
 
-    public Tacon(int altura, Material material) {
+    public Tacon(int altura, MaterialTacon materialTacon) {
         Altura = altura;
-        this.material = material;
+        this.materialTacon = materialTacon;
     }
 
     public int getAltura() {
@@ -19,11 +20,11 @@ public class Tacon {
         Altura = altura;
     }
 
-    public Material getMaterial() {
-        return material;
+    public MaterialTacon getMaterialTacon() {
+        return materialTacon;
     }
 
-    public void setMaterial(Material material) {
-        this.material = material;
+    public void setMaterialTacon(MaterialTacon materialTacon) {
+        this.materialTacon = materialTacon;
     }
 }

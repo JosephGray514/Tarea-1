@@ -1,23 +1,23 @@
 package Componentes;
 
 import enums.Material;
-import enums.Tipo;
+import enums.TipoAlmohadilla;
 
 public class Almohadilla {
-    private Tipo tipo;
+    private TipoAlmohadilla tipoAlmohadilla;
     private Material material;
 
-    public Almohadilla(Tipo tipo, Material material) {
-        this.tipo = tipo;
+    public Almohadilla(TipoAlmohadilla tipoAlmohadilla, Material material) {
+        this.tipoAlmohadilla = tipoAlmohadilla;
         this.material = material;
     }
 
-    public Tipo getTipo() {
-        return tipo;
+    public TipoAlmohadilla getTipo() {
+        return tipoAlmohadilla;
     }
 
-    public void setTipo(Tipo tipo) {
-        this.tipo = tipo;
+    public void setTipoAlmohadilla(TipoAlmohadilla tipoAlmohadilla) {
+        this.tipoAlmohadilla = tipoAlmohadilla;
     }
 
     public Material getMaterial() {
