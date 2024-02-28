@@ -6,8 +6,13 @@ import  Class.*;
 import enums.Color;
 import enums.Suela;
 import enums.TipoCordon;
+import enums.EstiloEmpeine;
 
 public class CalzadoBuilder implements Builder{
+<<<<<<< Updated upstream
+=======
+    private TipoCordon tipoCordon;
+>>>>>>> Stashed changes
     private Almohadilla almohadilla;
     private Cordon cordon;
     private Tacon tacon;
@@ -15,7 +20,14 @@ public class CalzadoBuilder implements Builder{
     private Color color;
     private Lengueta lengueta;
     private Forro forro;
+<<<<<<< Updated upstream
     private Suela suela;
+=======
+
+    private Empeine empeine;
+    private PicadoMaria picadoMaria;
+
+>>>>>>> Stashed changes
     @Override
     public void setCordon(Cordon cordon) {
         this.cordon = cordon;
@@ -60,4 +72,9 @@ public class CalzadoBuilder implements Builder{
     public Calzado getCalsado() {
         return new Calzado(this.cordon, this.tacon, this.almohadilla, this.velcro, this.color, this.forro, this.lengueta, this.suela);
     }
+
+
+
+
 }
+    
