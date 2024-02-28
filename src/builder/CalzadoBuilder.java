@@ -67,6 +67,13 @@ public class CalzadoBuilder implements Builder{
     public void setSuela(Suela suela) {
         this.suela=suela;
     }
+    public void setEmpeine(Empeine empeine) {
+        this.empeine=empeine;
+    }
+    public void setPicadoMaria(PicadoMaria picadoMaria) {
+        this.picadoMaria=picadoMaria;
+    }
+
 
     @Override
     public Calzado getCalsado() {
@@ -77,4 +84,3 @@ public class CalzadoBuilder implements Builder{
 
 
 }
-    
