@@ -1,7 +1,7 @@
 package Class;
 import Componentes.*;
 import enums.Color;
-import enums.TipoAlmohadilla;
+import enums.Suela;
 import enums.TipoCordon;
 
 public class Calzado {
@@ -10,38 +10,34 @@ public class Calzado {
     private Almohadilla almohadilla;
     private Velcro velcro;
     private Color color;
-    private TipoAlmohadilla tipoAlmohadilla;
-   private  TipoCordon tipoCordon;
+    private Lengueta lengueta;
+    private Forro forro;
+    private Suela suela;
 
-   private lengueta lengueta;
-   private Forro forro;
-
-    public Calzado(Cordon cordon, Tacon tacon, Almohadilla almohadilla, Velcro velcro, Color color, TipoAlmohadilla tipoAlmohadilla, TipoCordon tipoCordon, Forro forro, lengueta lengueta) {
+    public Calzado(Cordon cordon, Tacon tacon, Almohadilla almohadilla, Velcro velcro, Color color, Forro forro, Lengueta lengueta, Suela suela) {
         this.cordon = cordon;
         this.tacon = tacon;
         this.almohadilla = almohadilla;
         this.velcro = velcro;
         this.color = color;
-        this.tipoAlmohadilla = tipoAlmohadilla;
-        this.tipoCordon = tipoCordon;
         this.forro=forro;
         this.lengueta=lengueta;
-
+        this.suela=suela;
     }
 
-    public TipoAlmohadilla getTipoAlmohadilla() {
-        return tipoAlmohadilla;
+    public Suela getSuela() {
+        return suela;
     }
 
-    public void setTipoAlmohadilla(TipoAlmohadilla tipoAlmohadilla) {
-        this.tipoAlmohadilla = tipoAlmohadilla;
+    public void setSuela(Suela suela) {
+        this.suela = suela;
     }
 
-    public Componentes.lengueta getLengueta() {
+    public Lengueta getLengueta() {
         return lengueta;
     }
 
-    public void setLengueta(Componentes.lengueta lengueta) {
+    public void setLengueta(Lengueta lengueta) {
         this.lengueta = lengueta;
     }
 
@@ -59,14 +55,6 @@ public class Calzado {
 
     public void setColor(Color color) {
         this.color = color;
-    }
-
-    public TipoAlmohadilla getTipo() {
-        return tipoAlmohadilla;
-    }
-
-    public void setTipo(TipoAlmohadilla tipoAlmohadilla) {
-        this.tipoAlmohadilla = tipoAlmohadilla;
     }
 
     public Cordon getCordon() {
@@ -99,13 +87,5 @@ public class Calzado {
 
     public void setVelcro(Velcro velcro) {
         this.velcro = velcro;
-    }
-
-    public TipoCordon getTipoCordon() {
-        return tipoCordon;
-    }
-
-    public void setTipoCordon(TipoCordon tipoCordon) {
-        this.tipoCordon = tipoCordon;
     }
 }

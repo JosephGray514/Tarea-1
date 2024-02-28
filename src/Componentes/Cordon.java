@@ -5,7 +5,6 @@ import enums.TipoAlmohadilla;
 import enums.TipoCordon;
 
 public class Cordon {
-
     private TipoCordon tipoCordon;
     private Color color;
 
