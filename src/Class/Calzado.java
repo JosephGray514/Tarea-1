@@ -1,6 +1,7 @@
 package Class;
 import Componentes.*;
 import enums.Color;
+import enums.Suela;
 import enums.TipoAlmohadilla;
 import enums.TipoCordon;
 
@@ -10,16 +11,15 @@ public class Calzado {
     private Almohadilla almohadilla;
     private Velcro velcro;
     private Color color;
-    private TipoAlmohadilla tipoAlmohadilla;
    private  TipoCordon tipoCordon;
+   private Suela suela;
 
-    public Calzado(Cordon cordon, Tacon tacon, Almohadilla almohadilla, Velcro velcro, Color color, TipoAlmohadilla tipoAlmohadilla, TipoCordon tipoCordon) {
+    public Calzado(Cordon cordon, Tacon tacon, Almohadilla almohadilla, Velcro velcro, Color color, TipoCordon tipoCordon) {
         this.cordon = cordon;
         this.tacon = tacon;
         this.almohadilla = almohadilla;
         this.velcro = velcro;
         this.color = color;
-        this.tipoAlmohadilla = tipoAlmohadilla;
         this.tipoCordon = tipoCordon;
     }
 
@@ -29,14 +29,6 @@ public class Calzado {
 
     public void setColor(Color color) {
         this.color = color;
-    }
-
-    public TipoAlmohadilla getTipo() {
-        return tipoAlmohadilla;
-    }
-
-    public void setTipo(TipoAlmohadilla tipoAlmohadilla) {
-        this.tipoAlmohadilla = tipoAlmohadilla;
     }
 
     public Cordon getCordon() {

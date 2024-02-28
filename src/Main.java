@@ -10,6 +10,5 @@ public class Main {
         clazadoBuilderDirector.buildCalzadoCordonAmarillo(calzadoBuilder);
         calzado = calzadoBuilder.getCalsado();
         System.out.println("Calzado: "+ calzado.getColor()+" "+"Tipo"+" "+calzado.getTipoCordon());
-
     }
 }

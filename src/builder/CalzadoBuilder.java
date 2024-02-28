@@ -12,12 +12,10 @@ import enums.TipoCordon;
 public class CalzadoBuilder implements Builder{
      private TipoCordon tipoCordon;
     private Almohadilla almohadilla;
-    private  TipoAlmohadilla tipoAlmohadilla;
     private Cordon cordon;
     private Tacon tacon;
     private Velcro velcro;
     private Color color;
-
 
     @Override
     public void setCordon(Cordon cordon) {
@@ -53,12 +51,7 @@ public class CalzadoBuilder implements Builder{
     }
 
     @Override
-    public void setTipoAlmohadilla(TipoAlmohadilla tipoAlmohadilla) {
-     this.tipoAlmohadilla=tipoAlmohadilla;
-    }
-
-    @Override
     public Calzado getCalsado() {
-        return new Calzado(this.cordon, this.tacon, this.almohadilla, this.velcro,this.color,this.tipoAlmohadilla,this.tipoCordon);
+        return new Calzado(this.cordon, this.tacon, this.almohadilla, this.velcro,this.color, this.tipoCordon);
     }
 }

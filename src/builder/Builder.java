@@ -16,7 +16,5 @@ public interface Builder {
     void  setAlmohadilla(Almohadilla almohadilla);
     void  setTipoCordon(TipoCordon tipoCordon);
     void setColor(Color color);
-    void setTipoAlmohadilla(TipoAlmohadilla tipoAlmohadilla);
-
     Calzado getCalsado();
 }

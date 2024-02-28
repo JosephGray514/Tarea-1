@@ -8,13 +8,10 @@ import enums.TipoCordon;
 public class ClazadoBuilderDirector {
 
     public void buildCalzadoCordonAmarillo(Builder builder) {
-
         builder.setColor(Color.Amarillo);
         builder.setTipoCordon(TipoCordon.Redondo);
-
     }
     public void buildCalzadoCordonNegro (Builder builder){
-
         builder.setColor(Color.Negro);
         builder.setTipoCordon(TipoCordon.Ovalado);
     }
@@ -32,4 +29,4 @@ public class ClazadoBuilderDirector {
 
     }
 
-   }
+}
