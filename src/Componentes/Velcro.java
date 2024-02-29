@@ -5,20 +5,10 @@ import enums.TipoAlmohadilla;
 
 public class Velcro {
 
-    private TipoAlmohadilla tipo;
     private Color color;
 
-    public Velcro(TipoAlmohadilla tipo, Color color) {
-        this.tipo = tipo;
+    public Velcro(Color color) {
         this.color = color;
-    }
-
-    public TipoAlmohadilla getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(TipoAlmohadilla tipoAlmohadilla) {
-        this.tipo = tipoAlmohadilla;
     }
 
     public Color getColor() {

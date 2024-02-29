@@ -3,11 +3,7 @@ package builder;
 
 import Componentes.*;
 import  Class.*;
-import enums.Color;
-import enums.Suela;
-import enums.TipoCordon;
-import enums.EstiloEmpeine;
-
+import enums.*;
 public class CalzadoBuilder implements Builder{
 
     private TipoCordon tipoCordon;
@@ -80,8 +76,5 @@ public class CalzadoBuilder implements Builder{
     public Calzado getCalsado() {
         return new Calzado(this.cordon, this.tacon, this.almohadilla, this.velcro, this.color, this.lengueta, this.forro, this.suela,this.picadoMaria,this.empeine );
     }
-
-
-
 
 }
