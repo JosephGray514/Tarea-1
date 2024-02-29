@@ -1,12 +1,13 @@
+package Componentes;
 
 public class PicadoMaria {
     private String tipoPicado;
     private double densidadDePicado;
 
-    public PicadoMaria (String tipoPicado,double densidadDePicado)
+    public PicadoMaria (String tipoPicado,double densidadDePicado){
     this.tipoPicado = tipoPicado;
     this.densidadDePicado= densidadDePicado;
-
+}
     public String getTipoPicado() {
         return tipoPicado;
     }
