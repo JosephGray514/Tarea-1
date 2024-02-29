@@ -64,17 +64,21 @@ public class CalzadoBuilder implements Builder{
     public void setSuela(Suela suela) {
         this.suela=suela;
     }
+
+    @Override
     public void setEmpeine(Empeine empeine) {
         this.empeine=empeine;
     }
+
+    @Override
     public void setPicadoMaria(PicadoMaria picadoMaria) {
-        this.picadoMaria=picadoMaria;
+     this.picadoMaria=picadoMaria;
     }
 
 
     @Override
     public Calzado getCalsado() {
-        return new Calzado(this.cordon, this.tacon, this.almohadilla, this.velcro, this.color, this.forro, this.lengueta, this.suela);
+        return new Calzado(this.cordon, this.tacon, this.almohadilla, this.velcro, this.color, this.lengueta, this.forro, this.suela,this.picadoMaria,this.empeine );
     }
 
 

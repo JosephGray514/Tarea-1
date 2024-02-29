@@ -16,6 +16,7 @@ public interface Builder {
     void setForro(Forro forro);
     void setlengueta(Lengueta lengueta);
     void setSuela(Suela suela);
-
+    void setEmpeine(Empeine empeine);
+   void setPicadoMaria(PicadoMaria picadoMaria);
     Calzado getCalsado();
 }

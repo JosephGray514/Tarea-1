@@ -13,16 +13,20 @@ public class Calzado {
     private Lengueta lengueta;
     private Forro forro;
     private Suela suela;
+    private PicadoMaria picadoMaria;
+    private  Empeine empeine;
 
-    public Calzado(Cordon cordon, Tacon tacon, Almohadilla almohadilla, Velcro velcro, Color color, Forro forro, Lengueta lengueta, Suela suela) {
+    public Calzado(Cordon cordon, Tacon tacon, Almohadilla almohadilla, Velcro velcro, Color color, Lengueta lengueta, Forro forro, Suela suela, PicadoMaria picadoMaria, Empeine empeine) {
         this.cordon = cordon;
         this.tacon = tacon;
         this.almohadilla = almohadilla;
         this.velcro = velcro;
         this.color = color;
-        this.forro=forro;
-        this.lengueta=lengueta;
-        this.suela=suela;
+        this.lengueta = lengueta;
+        this.forro = forro;
+        this.suela = suela;
+        this.picadoMaria = picadoMaria;
+        this.empeine = empeine;
     }
 
     public Suela getSuela() {
@@ -87,5 +91,21 @@ public class Calzado {
 
     public void setVelcro(Velcro velcro) {
         this.velcro = velcro;
+    }
+
+    public PicadoMaria getPicadoMaria() {
+        return picadoMaria;
+    }
+
+    public void setPicadoMaria(PicadoMaria picadoMaria) {
+        this.picadoMaria = picadoMaria;
+    }
+
+    public Empeine getEmpeine() {
+        return empeine;
+    }
+
+    public void setEmpeine(Empeine empeine) {
+        this.empeine = empeine;
     }
 }
