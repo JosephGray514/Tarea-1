@@ -61,7 +61,7 @@ public class Boletin  {
     public String boletinCalzadoAlmohadillaErogonomica(Calzado calzado) {
         String mensajeAlmohadilla = "";
 
-        
+
 
         return mensajeAlmohadilla;
     }

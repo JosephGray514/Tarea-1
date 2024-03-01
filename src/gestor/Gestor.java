@@ -2,6 +2,8 @@ package gestor;
 import builder.CalzadoBuilder;
 import director.ClazadoBuilderDirector;
 import Class.*;
+import ticket.Boletin;
+
 import java.io.BufferedReader;
 import java.io.*;
 public class Gestor {
@@ -71,7 +73,9 @@ public class Gestor {
         calzadoBuilderDirector.buildCalzadoJoseph(calzadoBuilder);
         //El calzado toma el valor del calzado creado por el Builder
         calzado = calzadoBuilder.getCalsado();
+        Boletin boletin = new Boletin();
         
+
     }
 
 
