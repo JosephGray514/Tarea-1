@@ -23,12 +23,11 @@ public class Boletin  {
         return  mensaje;
     }
 
-    public String buildCalzadoCordonAmarillo(Calzado calzado) {
+    public String boletinCalzadoCordonAmarillo(Calzado calzado) {
 
         String mensajeCordonAmarillo = "";
 
         if (calzado.getCordon() != null){
-
             mensajeCordonAmarillo += "El cordon del calzado es: "+calzado.getCordon().getTipoCordon()+" y de color: "+"\u001B[33m"+calzado.getCordon().getColor()+"" +"\n";
             mensajeCordonAmarillo += "El color del calzado es: "+calzado.getColor()+"\n";
             mensajeCordonAmarillo += "El forro del calzado es de material: "+calzado.getForro().getMaterial()+" y de color: "+calzado.getForro().getColor()+"\n";
@@ -42,7 +41,7 @@ public class Boletin  {
     }
 
 
-    public String buildCalzadoTacon(Calzado calzado){
+    public String boletinCalzadoTacon(Calzado calzado){
 
         String mensajeCalzadoTacon = "";
 
@@ -50,15 +49,21 @@ public class Boletin  {
             mensajeCalzadoTacon += "El color del calzado es: "+calzado.getColor()+"\n";
             mensajeCalzadoTacon += "El cordon del calzado es: "+calzado.getCordon().getTipoCordon()+" y de color: "+"\u001B[33m"+calzado.getCordon().getColor()+"" +"\n";
             mensajeCalzadoTacon += "El forro del calzado es de material: "+calzado.getForro().getMaterial()+" y de color: "+calzado.getForro().getColor()+"\n";
-            mensajeCalzadoTacon += "El tacon del calzado es: "+calzado.getTacon()+"\n";
+            mensajeCalzadoTacon += "El material del tacon es: "+calzado.getTacon().getMaterialTacon()+" y de altura: "+calzado.getTacon().getAltura()+"\n";
             mensajeCalzadoTacon += "El picado maria del calzado es: "+calzado.getPicadoMaria()+"\n";
-            mensajeCalzadoTacon += "El empeine del calzado es: "+calzado.getEmpeine()+"\n";
-            mensajeCalzadoTacon += "La lengueta del calzado es: "+calzado.getLengueta()+"\n";
-            mensajeCalzadoTacon += "La almohadilla del calzado es: "+calzado.getAlmohadilla();
+            mensajeCalzadoTacon += "El empeine del calzado es de : "+calzado.getEmpeine().getEstilo()+" de ancho: "+calzado.getEmpeine().getAncho()+" y de color: "+calzado.getEmpeine().getColor()+"\n";
+            mensajeCalzadoTacon += "La lengueta del calzado es de material: "+calzado.getLengueta().getMaterial()+" y de color: "+calzado.getEmpeine().getColor()+"\n";
+            mensajeCalzadoTacon += "La almohadilla del calzado es de tipo: "+calzado.getAlmohadilla().getTipo()+" y de material: "+calzado.getAlmohadilla().getMaterial();
         }
         return  mensajeCalzadoTacon;
     }
 
+    public String boletinCalzadoAlmohadillaErogonomica(Calzado calzado) {
+        String mensajeAlmohadilla = "";
 
+        
+
+        return mensajeAlmohadilla;
+    }
 
 }
