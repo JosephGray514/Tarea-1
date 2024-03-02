@@ -9,41 +9,46 @@ import static gestor.Gestor.*;
 public class Main {
     static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
     static PrintStream out = System.out;
-
     Gestor gestor = new Gestor();
-
     public static void mostrarMenu() {
-        out.println("1. Calsado Amarillo");
-        out.println("2. Calsado Negro ");
-        out.println("3. Calsado velcro ");
-        out.println("4. Calsado josep");
-        out.println("s.salir");
+        out.println("\u001B[31m"+"\u001B[40m" +"***** Bienvenido *****"+"\n"
+        +"\u001B[34m"+"1. Calsado Cordon"+"\n"
+        +"\u001B[34m"+"2. Calsado Velcro"+"\n"
+        +"\u001B[34m"+"3. Calsado Tacon"+"\n"
+        +"\u001B[34m"+"4. Calsado Almohadilla"+"\n"
+        +"\u001B[33m"+"s. salir" +"\u001B[0m"
+                +"\u001B[40m");
     }
-    public static void ejecutarOpcion(String opcion) throws Exception {
+    public static String ejecutarOpcion(String opcion) throws Exception {
+        String mensaje = " ";
         switch (opcion) {
             case "1":
-                CalsadoAmarillo();
+                mensaje = CalzadoConCordon();
                 break;
             case "2":
-                CalsadoNegro();
+                mensaje = CalzadoConVelcro();
                 break;
             case "3":
-                CalsadoVelcroAzul();
+                mensaje = CalzadoConTacon();
                 break;
             case "4":
-                CalzadoTacon();
+                mensaje = CalzadoConAlmohadilla();
                 break;
             case "s":
                 out.println("Cerrando sesión");
         }
+        return mensaje;
     }
     public static void main(String[] args) throws Exception {
         String opcion = "";
         while(!opcion.equals("s")) {
             mostrarMenu();
-            System.out.println("Ingrese la opción deseada: ");
+            System.out.print("\u001B[36m"+"\u001B[40m"+"Ingrese su opción deseada: ");
             opcion = in.readLine();
             ejecutarOpcion(opcion);
+
+            String mensaje = ejecutarOpcion(opcion);
+            System.out.println(mensaje);
         }
     }
 }
