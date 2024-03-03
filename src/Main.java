@@ -45,7 +45,6 @@ public class Main {
             mostrarMenu();
             System.out.print("\u001B[36m"+"\u001B[40m"+"Ingrese su opción deseada: ");
             opcion = in.readLine();
-            ejecutarOpcion(opcion);
 
             String mensaje = ejecutarOpcion(opcion);
             System.out.println(mensaje);
